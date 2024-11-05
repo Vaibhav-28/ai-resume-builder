@@ -22,7 +22,7 @@ const PersonalDetailPreview = ({ resumeInfo }: PersonalDetailPreviewProps) => {
       >
         {resumeInfo?.address}
       </h2>
-      <div className="flex justify-between">
+      <div className="flex flex-col items-center justify-center md:flex-row md:justify-between">
         <h2
           className="font-normal text-xs"
           style={{ color: resumeInfo?.themeColor }}
