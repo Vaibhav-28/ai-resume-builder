@@ -53,20 +53,16 @@ const AddResume = () => {
         onClick={() => setOpenDialog(true)}
         className="group relative h-[280px] rounded-xl cursor-pointer overflow-hidden"
       >
-        {/* Dashed border container with gradient animation */}
         <div className="absolute inset-0 p-[1px] rounded-xl bg-gradient-to-br from-gray-200 via-gray-300 to-gray-200 group-hover:from-[#4a5568] group-hover:via-blue-400 group-hover:to-[#4a5568] transition-all duration-500">
           <div className="h-full w-full bg-white dark:bg-gray-900 rounded-xl" />
         </div>
 
-        {/* Main content container */}
         <div className="relative h-full flex flex-col items-center justify-center gap-4 p-8">
-          {/* Animated background elements */}
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-br from-[#4a5568]/10 to-transparent rounded-full transform translate-x-20 -translate-y-20" />
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-br from-[#4a5568]/10 to-transparent rounded-full transform -translate-x-20 translate-y-20" />
           </div>
 
-          {/* Icon container */}
           <div className="relative">
             <div className="p-3 rounded-xl border-2 border-dashed border-gray-300 group-hover:border-[#4a5568] transition-colors duration-300">
               <div className="p-4 bg-gray-50 group-hover:bg-[#4a5568]/5 rounded-lg transition-colors duration-300">
@@ -77,11 +73,9 @@ const AddResume = () => {
               </div>
             </div>
 
-            {/* Glow effect on hover */}
             <div className="absolute -inset-2 bg-[#4a5568]/20 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
 
-          {/* Text content */}
           <div className="text-center">
             <h3 className="text-lg font-medium text-gray-600 group-hover:text-[#4a5568] transition-colors duration-300">
               Create New Resume
@@ -91,7 +85,6 @@ const AddResume = () => {
             </p>
           </div>
 
-          {/* Pulse animation */}
           <div className="absolute inset-0 -z-10">
             <div className="absolute inset-0 bg-[#4a5568]/5 rounded-xl scale-0 group-hover:scale-100 transition-transform duration-500" />
           </div>
