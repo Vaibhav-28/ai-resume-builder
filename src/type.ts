@@ -9,6 +9,15 @@ export interface ExperienceType {
   workSummary: string;
 }
 
+export interface ProjectsType {
+  id?: number;
+  title: string;
+  startDate: string;
+  endDate?: string;
+  currentlyWorking?: boolean;
+  description: string;
+}
+
 export interface EducationType {
   id?: number;
   university: string;
@@ -36,5 +45,7 @@ export interface ResumeInfo {
   summary: string;
   experience: ExperienceType[];
   education: EducationType[];
+  projects: ProjectsType[];
   skills: Skill[];
+  additionalInformation: string;
 }

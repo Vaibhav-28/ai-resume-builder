@@ -10,6 +10,8 @@ import { Navigate, useParams } from "react-router-dom";
 import { ResumeInfoContext } from "@/context/ResumeInfoContext";
 import GlobalApi from "../../../../service/GlobalApi";
 import { useToast } from "@/hooks/use-toast";
+import Projects from "./forms/Projects";
+import AdditionalInformation from "./forms/AdditionalInformation";
 
 const FormSection = () => {
   const resumeContext = useContext(ResumeInfoContext);
@@ -97,7 +99,7 @@ const FormSection = () => {
               <ArrowLeft />
             </Button>
           )}
-          {activeFormIndex < 6 && (
+          {activeFormIndex < 8 && (
             <Button
               onClick={() => setActiveFormIndex((prevState) => prevState + 1)}
               className="flex gap-2"
@@ -111,9 +113,11 @@ const FormSection = () => {
       {activeFormIndex === 1 && <PersonalDetails />}
       {activeFormIndex === 2 && <Summary />}
       {activeFormIndex === 3 && <Experience />}
-      {activeFormIndex === 4 && <Education />}
-      {activeFormIndex === 5 && <Skills />}
-      {activeFormIndex === 6 && <Navigate to={`/my-resume/${resumeId}/view`} />}
+      {activeFormIndex === 4 && <Projects />}
+      {activeFormIndex === 5 && <Education />}
+      {activeFormIndex === 6 && <Skills />}
+      {activeFormIndex === 7 && <AdditionalInformation />}
+      {activeFormIndex === 8 && <Navigate to={`/my-resume/${resumeId}/view`} />}
     </div>
   );
 };
